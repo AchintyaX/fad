@@ -1,7 +1,7 @@
 import pandas as pd
 import yfinance as yf 
 import numpy as np 
-from anamoly_utils import seasonal_ad_detector, min_cluster_detector, outlier_detector, level_shift_detector, volatile_shift_detector
+from fad.anamoly_utils import seasonal_ad_detector, min_cluster_detector, outlier_detector, level_shift_detector, volatile_shift_detector
 from adtk.data import validate_series 
 
 
@@ -19,9 +19,12 @@ class FinancialAnomalyDetector:
     def fetch_data(self, company_name: str, start_date: str, end_date: str) -> pd.DataFrame:
         data = yf.download(company_name, start=start_date, end=end_date)
 
+        print(data) 
+
         idx = pd.date_range(start_date, end_date)
         data = data.reindex(idx)
-        data = data.fillna(method="ffill", inplace = True)
+        data.fillna(method="ffill", inplace = True)
+        print(data)
 
         data = validate_series(data)
 

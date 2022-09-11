@@ -8,7 +8,7 @@ from adtk.detector import LevelShiftAD
 from adtk.detector import VolatilityShiftAD
 import pandas as pd 
 from typing import Optional
-from constants import seasonal_c, side, n_clusters, contamination, level_shift_c, side_levelshift, window_levelshift , volatile_shift_c, side_volatile_shift, window_volatile_shift
+from fad.constants import seasonal_c, side, n_clusters, contamination, level_shift_c, side_levelshift, window_levelshift , volatile_shift_c, side_volatile_shift, window_volatile_shift
 
 
 def seasonal_ad_detector(data: pd.DataFrame, print_plot: bool = True) -> Optional[pd.DataFrame]:

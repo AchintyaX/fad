@@ -5,6 +5,9 @@ You can download the stock data and perform anomaly detection using a range of a
 
 ## Installation
 For installing the pre-release version use -
+` pip install https://github.com/AchintyaX/fad/releases/download/v0.1.0/fad-0.1.0-py3-none-any.whl`
+
+## Usage
 1. fetch_data - Used for fetching stock data using yahoo finance API and transforming it for anamoly detection : 
 ```
 In [1]: from fad import FinancialAnomalyDetector
@@ -36,9 +39,7 @@ Out[6]:
 
 ```
 
-` pip install https://github.com/AchintyaX/fad/releases/download/v0.1.0/fad-0.1.0-py3-none-any.whl`
-
-## Usage
+2. anamly_detection - Used to find anomalies in the data returning the dataframe along with plotting them in the time series
 
 The package has 2 primary methods - 
 1. 

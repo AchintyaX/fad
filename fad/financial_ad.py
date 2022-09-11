@@ -1,7 +1,7 @@
 import pandas as pd
 import yfinance as yf 
 import numpy as np 
-from fad.anamoly_utils import seasonal_ad_detector, min_cluster_detector, outlier_detector, level_shift_detector, volatile_shift_detector
+from fad.anomaly_utils import seasonal_ad_detector, min_cluster_detector, outlier_detector, level_shift_detector, volatile_shift_detector
 from adtk.data import validate_series 
 
 
@@ -30,7 +30,7 @@ class FinancialAnomalyDetector:
 
         return data
     
-    def anamoly_detect(self, data: pd.DataFrame, method: str = 'min_cluster_ad', print_plot: bool = True) -> pd.DataFrame:
+    def anomaly_detect(self, data: pd.DataFrame, method: str = 'min_cluster_ad', print_plot: bool = True) -> pd.DataFrame:
         detection_method = self.detector_map[method]
 
         anomalies = detection_method(data=data, print_plot=print_plot)

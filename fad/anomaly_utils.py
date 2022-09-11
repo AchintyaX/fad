@@ -13,21 +13,21 @@ from fad.constants import seasonal_c, side, n_clusters, contamination, level_shi
 
 def seasonal_ad_detector(data: pd.DataFrame, print_plot: bool = True) -> Optional[pd.DataFrame]:
     seasonal_ad = SeasonalAD(c=seasonal_c, side=side)
-    anamolies = seasonal_ad.fit_detect(data)
+    anomalies = seasonal_ad.fit_detect(data)
 
     if print_plot == True:
-        print(plot(data, anomaly=anamolies, anomaly_color="orange", anomaly_tag="marker"))
+        print(plot(data, anomaly=anomalies, anomaly_color="orange", anomaly_tag="marker"))
     
-    return anamolies
+    return anomalies
 
 def min_cluster_detector(data: pd.DataFrame, print_plot: bool =True) -> Optional[pd.DataFrame]:
-    min_cluster_ad = MinClusterDetector(KMeans(n_clusters=3))
-    anamolies = min_cluster_ad.fit_detect(data)
+    min_cluster_ad = MinClusterDetector(KMeans(n_clusters=n_clusters))
+    anomalies = min_cluster_ad.fit_detect(data)
 
     if print_plot == True:
-        plot(data, anomaly=anamolies, ts_linewidth=1, ts_markersize=3, anomaly_color='red', anomaly_alpha=0.3, curve_group='all')
+        plot(data, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_color='red', anomaly_alpha=0.3, curve_group='all')
     
-    return anamolies
+    return anomalies
 
 def outlier_detector(data: pd.DataFrame, print_plot: bool = True) -> Optional[pd.DataFrame]:
     outlier_ad = OutlierDetector(LocalOutlierFactor(contamination=contamination))

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fad"
-version = "0.1.0"
+version = "0.1.1"
 description = "experimentation with anamoly detection"
 authors = ["Achintya Shankhdhar <achintya.shankhdhar@simpplr.com>"]
 license = "MIT"

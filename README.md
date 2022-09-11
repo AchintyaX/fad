@@ -45,7 +45,7 @@ We have a series algorithms available for usage -
     - outlier anomaly detection
     - level shift anomaly detection
     - volatile shift anomaly detection
-You can read more about them (here)[https://arundo-adtk.readthedocs-hosted.com/en/stable/notebooks/demo.html#]
+You can read more about them [here](https://arundo-adtk.readthedocs-hosted.com/en/stable/notebooks/demo.html#)
 ```
 In [7]: fad.anomaly_detect(data)
 Out[7]: 
@@ -80,5 +80,5 @@ For bugs and feature requests please raise an issue on the github repo
 For contributions please raise a Pull Request
 
 ## Credits 
-1. (yfinance)[https://pypi.org/project/yfinance/]
-2. (ADTK)[https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html]
+1. [yfinance](https://pypi.org/project/yfinance/)
+2. [ADTK](https://arundo-adtk.readthedocs-hosted.com/en/stable/install.html)

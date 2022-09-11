@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fad"
+version = "0.1.0"
+description = "experimentation with anamoly detection"
+authors = ["Achintya Shankhdhar <achintya.shankhdhar@simpplr.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "anamoly_detection"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+adtk = "^0.6.2"
+yfinance = "^0.1.74"
+pandas = "^1.4.4"
+jupyter = "^1.0.0"
+notebook = "^6.4.12"
+typing = "3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

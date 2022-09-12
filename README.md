@@ -80,7 +80,7 @@ Out[7]:
 
 project setup is complete for contributions 
 
-For bugs and feature requests please raise an issue on the github repo
+For bugs and feature requests please raise an issue on the github repo <br>
 For contributions please raise a Pull Request
 
 ## Credits 

@@ -49,7 +49,7 @@ We have a series algorithms available for usage -
     - outlier anomaly detection
     - level shift anomaly detection
     - volatile shift anomaly detection
-You can read more about them [here](https://arundo-adtk.readthedocs-hosted.com/en/stable/notebooks/demo.html#)
+<br>You can read more about them [here](https://arundo-adtk.readthedocs-hosted.com/en/stable/notebooks/demo.html#)
 ```
 In [7]: fad.anomaly_detect(data)
 Out[7]: 

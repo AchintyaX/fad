@@ -9,6 +9,8 @@ For installing the pre-release version use -
 pip install https://github.com/AchintyaX/fad/releases/download/v0.1.1/fad-0.1.1-py3-none-any.whl
 ```
 ## Usage
+The package has 2 primary methods - 
+
 1. fetch_data - Used for fetching stock data using yahoo finance API and transforming it for anamoly detection : 
 ```
 In [1]: from fad import FinancialAnomalyDetector
@@ -66,8 +68,8 @@ Out[7]:
 
 ```
 
-The package has 2 primary methods - 
-1. 
+
+
 
 ## For Development 
 

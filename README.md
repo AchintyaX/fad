@@ -5,7 +5,7 @@ You can download the stock data and perform anomaly detection using a range of a
 
 ## Installation
 For installing the pre-release version use -
-` pip install https://github.com/AchintyaX/fad/releases/download/v0.1.1/fad-0.1.1-py3-none-any.whl`
+``` pip install https://github.com/AchintyaX/fad/releases/download/v0.1.1/fad-0.1.1-py3-none-any.whl````
 ## Usage
 1. fetch_data - Used for fetching stock data using yahoo finance API and transforming it for anamoly detection : 
 ```
